@@ -25,6 +25,22 @@ body {
     justify-items: center;
 }
 
+#information {
+    font-size: large;
+    font-weight: bold;
+}
+
+#heading {
+    color: #a168ab;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#resetGame {
+    font-weight: bold;
+    color: white
+}
 
 .square {
     /* width: 90px;

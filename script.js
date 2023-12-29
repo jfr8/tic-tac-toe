@@ -5,7 +5,7 @@ const boardStartingCells = ["", "", "", "", "", "", "", "", ""];
 
 let go = "circle";
 let playerMove = 0; // tracks player movement for draw game
-information.textContent = "Circle goes first";
+information.textContent = "Circle goes first!";
 
 const addGo = (e) => {
   const goDisplay = document.createElement("div");
@@ -56,30 +56,30 @@ const checkScore = () => {
       // Gets element ID based on cell to push to array
       const square = document.getElementById(`${cell}`);
 
-      console.log("getting the ID for each cell (square): ", square);
+      //console.log("getting the ID for each cell (square): ", square);
 
       // checks if we have class of 'circle' or 'cross' is true
       const hasCircle = !!square.querySelector(".circle");
       const hasCross = !!square.querySelector(".cross");
 
-      console.log(
-        "checks if query selector .circle class is true: ",
-        hasCircle
-      );
-      console.log("checks if query selector .circle class is true: ", hasCross);
+      // console.log(
+      //   "checks if query selector .circle class is true: ",
+      //   hasCircle
+      // );
+      // console.log("checks if query selector .circle class is true: ", hasCross);
 
       // pushes index to has circle or corss array
       hasCirclesArray.push(hasCircle);
       hasCrossArray.push(hasCross);
 
-      console.log(
-        "pushes boolean value if true to an array called hasCircleArray",
-        hasCirclesArray
-      );
-      console.log(
-        "pushes boolean value if true to an array called hasCrossArray",
-        hasCrossArray
-      );
+      // console.log(
+      //   "pushes boolean value if true to an array called hasCircleArray",
+      //   hasCirclesArray
+      // );
+      // console.log(
+      //   "pushes boolean value if true to an array called hasCrossArray",
+      //   hasCrossArray
+      // );
     });
 
     // checks all items in array and returns a boolan value
